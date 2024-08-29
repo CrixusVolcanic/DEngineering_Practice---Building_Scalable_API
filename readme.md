@@ -1,6 +1,38 @@
-# Globant Test Application
+# Data Engineering Practice: Building a Scalable API and Data Exploration System
 
-Welcome to the Globant Test Application repository. This application is built with Flask and SQLAlchemy and is designed to demonstrate various features, including uploading CSV files, fetching metrics, and more.
+This project is a hands-on practice aimed at developing a robust data engineering solution. The goal is to build a scalable REST API that handles historical data migration, batch processing, and data exploration with SQL. The project is designed to simulate real-world challenges and best practices in data engineering.
+
+## Project Structure
+
+### Section 1: REST API for Data Migration and Processing
+
+In this section, a REST API was developed to:
+
+1. Ingest Historical Data: Load data from CSV files representing different entities like departments, jobs, and employees.
+2. Batch Data Upload: Process and upload this data to a SQL database.
+3. Batch Transactions: Handle batch insertions of up to 1000 rows per request to ensure efficient data processing.
+
+### Section 2: Data Exploration Using SQL
+
+This section focuses on exploring the data inserted into the database:
+
+1. Hiring Trends Analysis: Generate a report showing the number of employees hired per job and department in 2021, broken down by quarters.
+2. Departmental Hiring Performance: Identify departments that hired more employees than the average across all departments, ranked in descending order.
+
+### Bonus Track: Testing & Containerization
+
+To enhance the robustness of the solution:
+
+- Automated Testing: Comprehensive tests were implemented to validate the API’s functionality, using various testing libraries.
+- Containerization: A Dockerfile was created to containerize the application, simplifying deployment and ensuring consistent environments.
+
+### Technology Stack
+
+- Programming Language: Python
+- Framework: Flask for the API
+- Database: MySQL
+- Containerization: Docker
+- Testing: PyTest
 
 ## Installation
 
