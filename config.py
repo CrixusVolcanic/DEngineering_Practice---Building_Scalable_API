@@ -1,4 +1,7 @@
 import os
+from libraries.utils import get_secret
+
+get_secret()
 
 # Leer variables de entorno
 DB_USER = os.getenv('DB_USER', 'postgres')
